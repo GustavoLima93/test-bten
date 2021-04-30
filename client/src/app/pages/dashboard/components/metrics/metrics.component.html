@@ -1,0 +1,16 @@
+<div >
+  <div class="kpi-cards">
+    <mat-card class="card" *ngFor="let kpi of cards">
+      <h2>Lorem</h2>  <span>{{ kpi }}</span>
+    </mat-card>
+    
+  </div>
+  <div class="content-charts">
+    <div>
+      <app-bar-chart [barChartData]="barChartData" [barChartLabels]="barChartLabels"></app-bar-chart>
+    </div>
+    <div>
+      <app-line-chart [lineChartData]="lineChartData" [lineChartLabels]="lineChartLabels"></app-line-chart>
+    </div>
+  </div>
+</div>
